@@ -1,0 +1,1228 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "datasets": {
+    "data-27e94348b3515a9cc2ac48c706498f78": [
+      {
+        "count": 4867,
+        "license": "DETECTIVE BOARD",
+        "percent": 48.7,
+        "rank": 1
+      },
+      {
+        "count": 3781,
+        "license": "COSMO",
+        "percent": 37.8,
+        "rank": 2
+      },
+      {
+        "count": 739,
+        "license": "DENTAL",
+        "percent": 7.4,
+        "rank": 3
+      },
+      {
+        "count": 98,
+        "license": "FUNERAL AND EMBALMER",
+        "percent": 1.0,
+        "rank": 4
+      },
+      {
+        "count": 73,
+        "license": "DIETETIC AND NUTRITION",
+        "percent": 0.7,
+        "rank": 5
+      },
+      {
+        "count": 71,
+        "license": "DESIGN FIRM",
+        "percent": 0.7,
+        "rank": 6
+      },
+      {
+        "count": 52,
+        "license": "MASSAGE LICENSING BD",
+        "percent": 0.5,
+        "rank": 7
+      },
+      {
+        "count": 46,
+        "license": "HOME INSPECTOR",
+        "percent": 0.5,
+        "rank": 8
+      },
+      {
+        "count": 37,
+        "license": "COMM ASSOC MGR",
+        "percent": 0.4,
+        "rank": 9
+      },
+      {
+        "count": 24,
+        "license": "CLIN PSYCHOLOGIST",
+        "percent": 0.2,
+        "rank": 10
+      },
+      {
+        "count": 22,
+        "license": "INTERIOR DESIGN",
+        "percent": 0.2,
+        "rank": 11
+      },
+      {
+        "count": 21,
+        "license": "COLLECTION AGENCY",
+        "percent": 0.2,
+        "rank": 12
+      },
+      {
+        "count": 21,
+        "license": "LIMITED LIABILITY CO",
+        "percent": 0.2,
+        "rank": 13
+      },
+      {
+        "count": 20,
+        "license": "ARCHITECT",
+        "percent": 0.2,
+        "rank": 14
+      },
+      {
+        "count": 17,
+        "license": "LAND SURVEYOR BOARD",
+        "percent": 0.2,
+        "rank": 15
+      },
+      {
+        "count": 16,
+        "license": "HME AND SERVICES PROV",
+        "percent": 0.2,
+        "rank": 16
+      },
+      {
+        "count": 15,
+        "license": "ATHLETICS",
+        "percent": 0.2,
+        "rank": 17
+      },
+      {
+        "count": 14,
+        "license": "MAR AND FAM THERAPIST",
+        "percent": 0.1,
+        "rank": 18
+      },
+      {
+        "count": 14,
+        "license": "ATHLETIC TRAINER",
+        "percent": 0.1,
+        "rank": 19
+      },
+      {
+        "count": 13,
+        "license": "ENVIRON. HLTH PRACT",
+        "percent": 0.1,
+        "rank": 20
+      },
+      {
+        "count": 9,
+        "license": "IDPR",
+        "percent": 0.1,
+        "rank": 21
+      },
+      {
+        "count": 7,
+        "license": "GEOLOGY",
+        "percent": 0.1,
+        "rank": 22
+      },
+      {
+        "count": 7,
+        "license": "LANDSCAPE ARCHITECT",
+        "percent": 0.1,
+        "rank": 23
+      },
+      {
+        "count": 6,
+        "license": "MEDICAL BOARD",
+        "percent": 0.1,
+        "rank": 24
+      },
+      {
+        "count": 5,
+        "license": "APPRAISAL",
+        "percent": 0.0,
+        "rank": 25
+      },
+      {
+        "count": 2,
+        "license": "DETECT. DECEPTION",
+        "percent": 0.0,
+        "rank": 26
+      },
+      {
+        "count": 2,
+        "license": "AUCTIONEER",
+        "percent": 0.0,
+        "rank": 27
+      },
+      {
+        "count": 1,
+        "license": "CEMETERY OVERSIGHT",
+        "percent": 0.0,
+        "rank": 28
+      }
+    ],
+    "data-8a2a23537d119d35b13672a08e6f6aff": [
+      {
+        "License Type": "DETECTIVE BOARD",
+        "count": 4867,
+        "percent": 48.7,
+        "rank": 1
+      },
+      {
+        "License Type": "COSMO",
+        "count": 3781,
+        "percent": 37.8,
+        "rank": 2
+      },
+      {
+        "License Type": "DENTAL",
+        "count": 739,
+        "percent": 7.4,
+        "rank": 3
+      },
+      {
+        "License Type": "FUNERAL AND EMBALMER",
+        "count": 98,
+        "percent": 1.0,
+        "rank": 4
+      },
+      {
+        "License Type": "DIETETIC AND NUTRITION",
+        "count": 73,
+        "percent": 0.7,
+        "rank": 5
+      },
+      {
+        "License Type": "DESIGN FIRM",
+        "count": 71,
+        "percent": 0.7,
+        "rank": 6
+      },
+      {
+        "License Type": "MASSAGE LICENSING BD",
+        "count": 52,
+        "percent": 0.5,
+        "rank": 7
+      },
+      {
+        "License Type": "HOME INSPECTOR",
+        "count": 46,
+        "percent": 0.5,
+        "rank": 8
+      },
+      {
+        "License Type": "COMM ASSOC MGR",
+        "count": 37,
+        "percent": 0.4,
+        "rank": 9
+      },
+      {
+        "License Type": "CLIN PSYCHOLOGIST",
+        "count": 24,
+        "percent": 0.2,
+        "rank": 10
+      },
+      {
+        "License Type": "INTERIOR DESIGN",
+        "count": 22,
+        "percent": 0.2,
+        "rank": 11
+      },
+      {
+        "License Type": "COLLECTION AGENCY",
+        "count": 21,
+        "percent": 0.2,
+        "rank": 12
+      },
+      {
+        "License Type": "LIMITED LIABILITY CO",
+        "count": 21,
+        "percent": 0.2,
+        "rank": 13
+      },
+      {
+        "License Type": "ARCHITECT",
+        "count": 20,
+        "percent": 0.2,
+        "rank": 14
+      },
+      {
+        "License Type": "LAND SURVEYOR BOARD",
+        "count": 17,
+        "percent": 0.2,
+        "rank": 15
+      },
+      {
+        "License Type": "HME AND SERVICES PROV",
+        "count": 16,
+        "percent": 0.2,
+        "rank": 16
+      },
+      {
+        "License Type": "ATHLETICS",
+        "count": 15,
+        "percent": 0.2,
+        "rank": 17
+      },
+      {
+        "License Type": "MAR AND FAM THERAPIST",
+        "count": 14,
+        "percent": 0.1,
+        "rank": 18
+      },
+      {
+        "License Type": "ATHLETIC TRAINER",
+        "count": 14,
+        "percent": 0.1,
+        "rank": 19
+      },
+      {
+        "License Type": "ENVIRON. HLTH PRACT",
+        "count": 13,
+        "percent": 0.1,
+        "rank": 20
+      },
+      {
+        "License Type": "IDPR",
+        "count": 9,
+        "percent": 0.1,
+        "rank": 21
+      },
+      {
+        "License Type": "GEOLOGY",
+        "count": 7,
+        "percent": 0.1,
+        "rank": 22
+      },
+      {
+        "License Type": "LANDSCAPE ARCHITECT",
+        "count": 7,
+        "percent": 0.1,
+        "rank": 23
+      },
+      {
+        "License Type": "MEDICAL BOARD",
+        "count": 6,
+        "percent": 0.1,
+        "rank": 24
+      },
+      {
+        "License Type": "APPRAISAL",
+        "count": 5,
+        "percent": 0.0,
+        "rank": 25
+      },
+      {
+        "License Type": "DETECT. DECEPTION",
+        "count": 2,
+        "percent": 0.0,
+        "rank": 26
+      },
+      {
+        "License Type": "AUCTIONEER",
+        "count": 2,
+        "percent": 0.0,
+        "rank": 27
+      },
+      {
+        "License Type": "CEMETERY OVERSIGHT",
+        "count": 1,
+        "percent": 0.0,
+        "rank": 28
+      }
+    ],
+    "data-cf760efc710c3ed611b68d45451970d1": [
+      {
+        "License Status": "EXPIRED",
+        "License Type": "APPRAISAL",
+        "n": 5,
+        "percent": 100.0,
+        "total": 5
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "ARCHITECT",
+        "n": 8,
+        "percent": 40.0,
+        "total": 20
+      },
+      {
+        "License Status": "DECEASED",
+        "License Type": "ARCHITECT",
+        "n": 1,
+        "percent": 5.0,
+        "total": 20
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "ARCHITECT",
+        "n": 5,
+        "percent": 25.0,
+        "total": 20
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "ARCHITECT",
+        "n": 6,
+        "percent": 30.0,
+        "total": 20
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "ATHLETIC TRAINER",
+        "n": 6,
+        "percent": 42.9,
+        "total": 14
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "ATHLETIC TRAINER",
+        "n": 8,
+        "percent": 57.1,
+        "total": 14
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "ATHLETICS",
+        "n": 15,
+        "percent": 100.0,
+        "total": 15
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "AUCTIONEER",
+        "n": 1,
+        "percent": 50.0,
+        "total": 2
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "AUCTIONEER",
+        "n": 1,
+        "percent": 50.0,
+        "total": 2
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "CEMETERY OVERSIGHT",
+        "n": 1,
+        "percent": 100.0,
+        "total": 1
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "CLIN PSYCHOLOGIST",
+        "n": 9,
+        "percent": 37.5,
+        "total": 24
+      },
+      {
+        "License Status": "CANCELLED",
+        "License Type": "CLIN PSYCHOLOGIST",
+        "n": 5,
+        "percent": 20.8,
+        "total": 24
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "CLIN PSYCHOLOGIST",
+        "n": 3,
+        "percent": 12.5,
+        "total": 24
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "CLIN PSYCHOLOGIST",
+        "n": 7,
+        "percent": 29.2,
+        "total": 24
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "COLLECTION AGENCY",
+        "n": 7,
+        "percent": 33.3,
+        "total": 21
+      },
+      {
+        "License Status": "CANCELLED",
+        "License Type": "COLLECTION AGENCY",
+        "n": 2,
+        "percent": 9.5,
+        "total": 21
+      },
+      {
+        "License Status": "CHANGE OF OWNERSHIP",
+        "License Type": "COLLECTION AGENCY",
+        "n": 1,
+        "percent": 4.8,
+        "total": 21
+      },
+      {
+        "License Status": "CLOSED",
+        "License Type": "COLLECTION AGENCY",
+        "n": 2,
+        "percent": 9.5,
+        "total": 21
+      },
+      {
+        "License Status": "INOPERATIVE",
+        "License Type": "COLLECTION AGENCY",
+        "n": 1,
+        "percent": 4.8,
+        "total": 21
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "COLLECTION AGENCY",
+        "n": 8,
+        "percent": 38.1,
+        "total": 21
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "COMM ASSOC MGR",
+        "n": 19,
+        "percent": 51.4,
+        "total": 37
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "COMM ASSOC MGR",
+        "n": 2,
+        "percent": 5.4,
+        "total": 37
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "COMM ASSOC MGR",
+        "n": 16,
+        "percent": 43.2,
+        "total": 37
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "COSMO",
+        "n": 940,
+        "percent": 24.9,
+        "total": 3781
+      },
+      {
+        "License Status": "CANCELLED",
+        "License Type": "COSMO",
+        "n": 12,
+        "percent": 0.3,
+        "total": 3781
+      },
+      {
+        "License Status": "CHANGE OF OWNERSHIP",
+        "License Type": "COSMO",
+        "n": 15,
+        "percent": 0.4,
+        "total": 3781
+      },
+      {
+        "License Status": "CLOSED",
+        "License Type": "COSMO",
+        "n": 12,
+        "percent": 0.3,
+        "total": 3781
+      },
+      {
+        "License Status": "DECEASED",
+        "License Type": "COSMO",
+        "n": 23,
+        "percent": 0.6,
+        "total": 3781
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "COSMO",
+        "n": 412,
+        "percent": 10.9,
+        "total": 3781
+      },
+      {
+        "License Status": "INOPERATIVE",
+        "License Type": "COSMO",
+        "n": 3,
+        "percent": 0.1,
+        "total": 3781
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "COSMO",
+        "n": 2363,
+        "percent": 62.5,
+        "total": 3781
+      },
+      {
+        "License Status": "Non Sufficient Fund Check Terminated",
+        "License Type": "COSMO",
+        "n": 1,
+        "percent": 0.0,
+        "total": 3781
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "DENTAL",
+        "n": 316,
+        "percent": 42.8,
+        "total": 739
+      },
+      {
+        "License Status": "CANCELLED",
+        "License Type": "DENTAL",
+        "n": 7,
+        "percent": 0.9,
+        "total": 739
+      },
+      {
+        "License Status": "DECEASED",
+        "License Type": "DENTAL",
+        "n": 31,
+        "percent": 4.2,
+        "total": 739
+      },
+      {
+        "License Status": "EXPIRED",
+        "License Type": "DENTAL",
+        "n": 4,
+        "percent": 0.5,
+        "total": 739
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "DENTAL",
+        "n": 58,
+        "percent": 7.8,
+        "total": 739
+      },
+      {
+        "License Status": "INOPERATIVE",
+        "License Type": "DENTAL",
+        "n": 1,
+        "percent": 0.1,
+        "total": 739
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "DENTAL",
+        "n": 322,
+        "percent": 43.6,
+        "total": 739
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "DESIGN FIRM",
+        "n": 23,
+        "percent": 32.4,
+        "total": 71
+      },
+      {
+        "License Status": "CANCELLED",
+        "License Type": "DESIGN FIRM",
+        "n": 2,
+        "percent": 2.8,
+        "total": 71
+      },
+      {
+        "License Status": "CLOSED",
+        "License Type": "DESIGN FIRM",
+        "n": 2,
+        "percent": 2.8,
+        "total": 71
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "DESIGN FIRM",
+        "n": 44,
+        "percent": 62.0,
+        "total": 71
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "DETECT. DECEPTION",
+        "n": 2,
+        "percent": 100.0,
+        "total": 2
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "DETECTIVE BOARD",
+        "n": 971,
+        "percent": 20.0,
+        "total": 4867
+      },
+      {
+        "License Status": "CANCELLED",
+        "License Type": "DETECTIVE BOARD",
+        "n": 2,
+        "percent": 0.0,
+        "total": 4867
+      },
+      {
+        "License Status": "CLOSED",
+        "License Type": "DETECTIVE BOARD",
+        "n": 3,
+        "percent": 0.1,
+        "total": 4867
+      },
+      {
+        "License Status": "DECEASED",
+        "License Type": "DETECTIVE BOARD",
+        "n": 1,
+        "percent": 0.0,
+        "total": 4867
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "DETECTIVE BOARD",
+        "n": 1,
+        "percent": 0.0,
+        "total": 4867
+      },
+      {
+        "License Status": "INOPERATIVE",
+        "License Type": "DETECTIVE BOARD",
+        "n": 11,
+        "percent": 0.2,
+        "total": 4867
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "DETECTIVE BOARD",
+        "n": 3395,
+        "percent": 69.8,
+        "total": 4867
+      },
+      {
+        "License Status": "Non Sufficient Fund Check Terminated",
+        "License Type": "DETECTIVE BOARD",
+        "n": 1,
+        "percent": 0.0,
+        "total": 4867
+      },
+      {
+        "License Status": "TERMINATED CARD RETURNED",
+        "License Type": "DETECTIVE BOARD",
+        "n": 431,
+        "percent": 8.9,
+        "total": 4867
+      },
+      {
+        "License Status": "TERMINATED VALID REASON",
+        "License Type": "DETECTIVE BOARD",
+        "n": 19,
+        "percent": 0.4,
+        "total": 4867
+      },
+      {
+        "License Status": "TERMINATED WITHOUT CARD",
+        "License Type": "DETECTIVE BOARD",
+        "n": 32,
+        "percent": 0.7,
+        "total": 4867
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "DIETETIC AND NUTRITION",
+        "n": 37,
+        "percent": 50.7,
+        "total": 73
+      },
+      {
+        "License Status": "CANCELLED",
+        "License Type": "DIETETIC AND NUTRITION",
+        "n": 1,
+        "percent": 1.4,
+        "total": 73
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "DIETETIC AND NUTRITION",
+        "n": 7,
+        "percent": 9.6,
+        "total": 73
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "DIETETIC AND NUTRITION",
+        "n": 28,
+        "percent": 38.4,
+        "total": 73
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "ENVIRON. HLTH PRACT",
+        "n": 3,
+        "percent": 23.1,
+        "total": 13
+      },
+      {
+        "License Status": "EXPIRED",
+        "License Type": "ENVIRON. HLTH PRACT",
+        "n": 1,
+        "percent": 7.7,
+        "total": 13
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "ENVIRON. HLTH PRACT",
+        "n": 4,
+        "percent": 30.8,
+        "total": 13
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "ENVIRON. HLTH PRACT",
+        "n": 5,
+        "percent": 38.5,
+        "total": 13
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "FUNERAL AND EMBALMER",
+        "n": 14,
+        "percent": 14.3,
+        "total": 98
+      },
+      {
+        "License Status": "CANCELLED",
+        "License Type": "FUNERAL AND EMBALMER",
+        "n": 44,
+        "percent": 44.9,
+        "total": 98
+      },
+      {
+        "License Status": "DECEASED",
+        "License Type": "FUNERAL AND EMBALMER",
+        "n": 4,
+        "percent": 4.1,
+        "total": 98
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "FUNERAL AND EMBALMER",
+        "n": 13,
+        "percent": 13.3,
+        "total": 98
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "FUNERAL AND EMBALMER",
+        "n": 23,
+        "percent": 23.5,
+        "total": 98
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "GEOLOGY",
+        "n": 5,
+        "percent": 71.4,
+        "total": 7
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "GEOLOGY",
+        "n": 1,
+        "percent": 14.3,
+        "total": 7
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "GEOLOGY",
+        "n": 1,
+        "percent": 14.3,
+        "total": 7
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "HME AND SERVICES PROV",
+        "n": 5,
+        "percent": 31.2,
+        "total": 16
+      },
+      {
+        "License Status": "CHANGE OF OWNERSHIP",
+        "License Type": "HME AND SERVICES PROV",
+        "n": 1,
+        "percent": 6.2,
+        "total": 16
+      },
+      {
+        "License Status": "CLOSED",
+        "License Type": "HME AND SERVICES PROV",
+        "n": 2,
+        "percent": 12.5,
+        "total": 16
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "HME AND SERVICES PROV",
+        "n": 8,
+        "percent": 50.0,
+        "total": 16
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "HOME INSPECTOR",
+        "n": 14,
+        "percent": 30.4,
+        "total": 46
+      },
+      {
+        "License Status": "EXPIRED",
+        "License Type": "HOME INSPECTOR",
+        "n": 8,
+        "percent": 17.4,
+        "total": 46
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "HOME INSPECTOR",
+        "n": 24,
+        "percent": 52.2,
+        "total": 46
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "IDPR",
+        "n": 6,
+        "percent": 66.7,
+        "total": 9
+      },
+      {
+        "License Status": "CANCELLED",
+        "License Type": "IDPR",
+        "n": 1,
+        "percent": 11.1,
+        "total": 9
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "IDPR",
+        "n": 2,
+        "percent": 22.2,
+        "total": 9
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "INTERIOR DESIGN",
+        "n": 2,
+        "percent": 9.1,
+        "total": 22
+      },
+      {
+        "License Status": "CANCELLED",
+        "License Type": "INTERIOR DESIGN",
+        "n": 1,
+        "percent": 4.5,
+        "total": 22
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "INTERIOR DESIGN",
+        "n": 5,
+        "percent": 22.7,
+        "total": 22
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "INTERIOR DESIGN",
+        "n": 14,
+        "percent": 63.6,
+        "total": 22
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "LAND SURVEYOR BOARD",
+        "n": 5,
+        "percent": 29.4,
+        "total": 17
+      },
+      {
+        "License Status": "CANCELLED",
+        "License Type": "LAND SURVEYOR BOARD",
+        "n": 1,
+        "percent": 5.9,
+        "total": 17
+      },
+      {
+        "License Status": "EXPIRED",
+        "License Type": "LAND SURVEYOR BOARD",
+        "n": 3,
+        "percent": 17.6,
+        "total": 17
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "LAND SURVEYOR BOARD",
+        "n": 4,
+        "percent": 23.5,
+        "total": 17
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "LAND SURVEYOR BOARD",
+        "n": 4,
+        "percent": 23.5,
+        "total": 17
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "LANDSCAPE ARCHITECT",
+        "n": 3,
+        "percent": 42.9,
+        "total": 7
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "LANDSCAPE ARCHITECT",
+        "n": 2,
+        "percent": 28.6,
+        "total": 7
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "LANDSCAPE ARCHITECT",
+        "n": 2,
+        "percent": 28.6,
+        "total": 7
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "LIMITED LIABILITY CO",
+        "n": 15,
+        "percent": 71.4,
+        "total": 21
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "LIMITED LIABILITY CO",
+        "n": 6,
+        "percent": 28.6,
+        "total": 21
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "MAR AND FAM THERAPIST",
+        "n": 7,
+        "percent": 50.0,
+        "total": 14
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "MAR AND FAM THERAPIST",
+        "n": 1,
+        "percent": 7.1,
+        "total": 14
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "MAR AND FAM THERAPIST",
+        "n": 6,
+        "percent": 42.9,
+        "total": 14
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "MASSAGE LICENSING BD",
+        "n": 23,
+        "percent": 44.2,
+        "total": 52
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "MASSAGE LICENSING BD",
+        "n": 12,
+        "percent": 23.1,
+        "total": 52
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "MASSAGE LICENSING BD",
+        "n": 17,
+        "percent": 32.7,
+        "total": 52
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "MEDICAL BOARD",
+        "n": 1,
+        "percent": 16.7,
+        "total": 6
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "MEDICAL BOARD",
+        "n": 2,
+        "percent": 33.3,
+        "total": 6
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "MEDICAL BOARD",
+        "n": 3,
+        "percent": 50.0,
+        "total": 6
+      }
+    ]
+  },
+  "hconcat": [
+    {
+      "data": {
+        "name": "data-27e94348b3515a9cc2ac48c706498f78"
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "license",
+            "type": "nominal"
+          },
+          {
+            "field": "count",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "field": "count",
+          "title": "Total Count",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "license",
+          "sort": {
+            "field": "rank",
+            "order": "ascending"
+          },
+          "title": "License",
+          "type": "nominal"
+        }
+      },
+      "height": {
+        "step": 24
+      },
+      "mark": {
+        "type": "bar"
+      },
+      "transform": [
+        {
+          "filter": "datum.rank <= TopN"
+        }
+      ],
+      "width": 420
+    },
+    {
+      "data": {
+        "name": "data-cf760efc710c3ed611b68d45451970d1"
+      },
+      "encoding": {
+        "color": {
+          "field": "value",
+          "scale": {
+            "scheme": "teals"
+          },
+          "title": "Metric Value",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "License Type",
+            "type": "nominal"
+          },
+          {
+            "field": "License Status",
+            "type": "nominal"
+          },
+          {
+            "field": "n",
+            "type": "quantitative"
+          },
+          {
+            "field": "percent",
+            "type": "quantitative"
+          },
+          {
+            "field": "value",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "field": "License Status",
+          "title": "Status",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "License Type",
+          "sort": {
+            "field": "rank",
+            "order": "ascending"
+          },
+          "title": "",
+          "type": "nominal"
+        }
+      },
+      "height": {
+        "step": 24
+      },
+      "mark": {
+        "type": "rect"
+      },
+      "transform": [
+        {
+          "from": {
+            "data": {
+              "name": "data-8a2a23537d119d35b13672a08e6f6aff"
+            },
+            "fields": [
+              "count",
+              "rank"
+            ],
+            "key": "License Type"
+          },
+          "lookup": "License Type"
+        },
+        {
+          "filter": "datum.rank <= TopN"
+        },
+        {
+          "as": "value",
+          "calculate": "Metric == 'Count' ? datum.n : datum.percent"
+        }
+      ],
+      "width": 420
+    }
+  ],
+  "params": [
+    {
+      "name": "TopN",
+      "value": 20
+    },
+    {
+      "name": "Metric",
+      "value": "Count"
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  }
+}

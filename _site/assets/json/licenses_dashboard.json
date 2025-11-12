@@ -1,0 +1,592 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "datasets": {
+    "data-94090c2196054711b56d02f5c5fd20ab": [
+      {
+        "License Status": "ACTIVE",
+        "License Type": "ARCHITECT",
+        "n": 8
+      },
+      {
+        "License Status": "DECEASED",
+        "License Type": "ARCHITECT",
+        "n": 1
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "ARCHITECT",
+        "n": 5
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "ARCHITECT",
+        "n": 6
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "CLIN PSYCHOLOGIST",
+        "n": 9
+      },
+      {
+        "License Status": "CANCELLED",
+        "License Type": "CLIN PSYCHOLOGIST",
+        "n": 5
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "CLIN PSYCHOLOGIST",
+        "n": 3
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "CLIN PSYCHOLOGIST",
+        "n": 7
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "COLLECTION AGENCY",
+        "n": 7
+      },
+      {
+        "License Status": "CANCELLED",
+        "License Type": "COLLECTION AGENCY",
+        "n": 2
+      },
+      {
+        "License Status": "CHANGE OF OWNERSHIP",
+        "License Type": "COLLECTION AGENCY",
+        "n": 1
+      },
+      {
+        "License Status": "CLOSED",
+        "License Type": "COLLECTION AGENCY",
+        "n": 2
+      },
+      {
+        "License Status": "INOPERATIVE",
+        "License Type": "COLLECTION AGENCY",
+        "n": 1
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "COLLECTION AGENCY",
+        "n": 8
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "COMM ASSOC MGR",
+        "n": 19
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "COMM ASSOC MGR",
+        "n": 2
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "COMM ASSOC MGR",
+        "n": 16
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "COSMO",
+        "n": 940
+      },
+      {
+        "License Status": "CANCELLED",
+        "License Type": "COSMO",
+        "n": 12
+      },
+      {
+        "License Status": "CHANGE OF OWNERSHIP",
+        "License Type": "COSMO",
+        "n": 15
+      },
+      {
+        "License Status": "CLOSED",
+        "License Type": "COSMO",
+        "n": 12
+      },
+      {
+        "License Status": "DECEASED",
+        "License Type": "COSMO",
+        "n": 23
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "COSMO",
+        "n": 412
+      },
+      {
+        "License Status": "INOPERATIVE",
+        "License Type": "COSMO",
+        "n": 3
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "COSMO",
+        "n": 2363
+      },
+      {
+        "License Status": "Non Sufficient Fund Check Terminated",
+        "License Type": "COSMO",
+        "n": 1
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "DENTAL",
+        "n": 316
+      },
+      {
+        "License Status": "CANCELLED",
+        "License Type": "DENTAL",
+        "n": 7
+      },
+      {
+        "License Status": "DECEASED",
+        "License Type": "DENTAL",
+        "n": 31
+      },
+      {
+        "License Status": "EXPIRED",
+        "License Type": "DENTAL",
+        "n": 4
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "DENTAL",
+        "n": 58
+      },
+      {
+        "License Status": "INOPERATIVE",
+        "License Type": "DENTAL",
+        "n": 1
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "DENTAL",
+        "n": 322
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "DESIGN FIRM",
+        "n": 23
+      },
+      {
+        "License Status": "CANCELLED",
+        "License Type": "DESIGN FIRM",
+        "n": 2
+      },
+      {
+        "License Status": "CLOSED",
+        "License Type": "DESIGN FIRM",
+        "n": 2
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "DESIGN FIRM",
+        "n": 44
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "DETECTIVE BOARD",
+        "n": 971
+      },
+      {
+        "License Status": "CANCELLED",
+        "License Type": "DETECTIVE BOARD",
+        "n": 2
+      },
+      {
+        "License Status": "CLOSED",
+        "License Type": "DETECTIVE BOARD",
+        "n": 3
+      },
+      {
+        "License Status": "DECEASED",
+        "License Type": "DETECTIVE BOARD",
+        "n": 1
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "DETECTIVE BOARD",
+        "n": 1
+      },
+      {
+        "License Status": "INOPERATIVE",
+        "License Type": "DETECTIVE BOARD",
+        "n": 11
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "DETECTIVE BOARD",
+        "n": 3395
+      },
+      {
+        "License Status": "Non Sufficient Fund Check Terminated",
+        "License Type": "DETECTIVE BOARD",
+        "n": 1
+      },
+      {
+        "License Status": "TERMINATED CARD RETURNED",
+        "License Type": "DETECTIVE BOARD",
+        "n": 431
+      },
+      {
+        "License Status": "TERMINATED VALID REASON",
+        "License Type": "DETECTIVE BOARD",
+        "n": 19
+      },
+      {
+        "License Status": "TERMINATED WITHOUT CARD",
+        "License Type": "DETECTIVE BOARD",
+        "n": 32
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "DIETETIC AND NUTRITION",
+        "n": 37
+      },
+      {
+        "License Status": "CANCELLED",
+        "License Type": "DIETETIC AND NUTRITION",
+        "n": 1
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "DIETETIC AND NUTRITION",
+        "n": 7
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "DIETETIC AND NUTRITION",
+        "n": 28
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "FUNERAL AND EMBALMER",
+        "n": 14
+      },
+      {
+        "License Status": "CANCELLED",
+        "License Type": "FUNERAL AND EMBALMER",
+        "n": 44
+      },
+      {
+        "License Status": "DECEASED",
+        "License Type": "FUNERAL AND EMBALMER",
+        "n": 4
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "FUNERAL AND EMBALMER",
+        "n": 13
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "FUNERAL AND EMBALMER",
+        "n": 23
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "HOME INSPECTOR",
+        "n": 14
+      },
+      {
+        "License Status": "EXPIRED",
+        "License Type": "HOME INSPECTOR",
+        "n": 8
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "HOME INSPECTOR",
+        "n": 24
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "INTERIOR DESIGN",
+        "n": 2
+      },
+      {
+        "License Status": "CANCELLED",
+        "License Type": "INTERIOR DESIGN",
+        "n": 1
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "INTERIOR DESIGN",
+        "n": 5
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "INTERIOR DESIGN",
+        "n": 14
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "LAND SURVEYOR BOARD",
+        "n": 5
+      },
+      {
+        "License Status": "CANCELLED",
+        "License Type": "LAND SURVEYOR BOARD",
+        "n": 1
+      },
+      {
+        "License Status": "EXPIRED",
+        "License Type": "LAND SURVEYOR BOARD",
+        "n": 3
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "LAND SURVEYOR BOARD",
+        "n": 4
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "LAND SURVEYOR BOARD",
+        "n": 4
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "LIMITED LIABILITY CO",
+        "n": 15
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "LIMITED LIABILITY CO",
+        "n": 6
+      },
+      {
+        "License Status": "ACTIVE",
+        "License Type": "MASSAGE LICENSING BD",
+        "n": 23
+      },
+      {
+        "License Status": "INACTIVE",
+        "License Type": "MASSAGE LICENSING BD",
+        "n": 12
+      },
+      {
+        "License Status": "NOT RENEWED",
+        "License Type": "MASSAGE LICENSING BD",
+        "n": 17
+      }
+    ],
+    "data-c996b2221d3b194c89a857bbeff5f2c6": [
+      {
+        "License Type": "DETECTIVE BOARD",
+        "count": 4867,
+        "percent": 48.7
+      },
+      {
+        "License Type": "COSMO",
+        "count": 3781,
+        "percent": 37.8
+      },
+      {
+        "License Type": "DENTAL",
+        "count": 739,
+        "percent": 7.4
+      },
+      {
+        "License Type": "FUNERAL AND EMBALMER",
+        "count": 98,
+        "percent": 1.0
+      },
+      {
+        "License Type": "DIETETIC AND NUTRITION",
+        "count": 73,
+        "percent": 0.7
+      },
+      {
+        "License Type": "DESIGN FIRM",
+        "count": 71,
+        "percent": 0.7
+      },
+      {
+        "License Type": "MASSAGE LICENSING BD",
+        "count": 52,
+        "percent": 0.5
+      },
+      {
+        "License Type": "HOME INSPECTOR",
+        "count": 46,
+        "percent": 0.5
+      },
+      {
+        "License Type": "COMM ASSOC MGR",
+        "count": 37,
+        "percent": 0.4
+      },
+      {
+        "License Type": "CLIN PSYCHOLOGIST",
+        "count": 24,
+        "percent": 0.2
+      },
+      {
+        "License Type": "INTERIOR DESIGN",
+        "count": 22,
+        "percent": 0.2
+      },
+      {
+        "License Type": "COLLECTION AGENCY",
+        "count": 21,
+        "percent": 0.2
+      },
+      {
+        "License Type": "LIMITED LIABILITY CO",
+        "count": 21,
+        "percent": 0.2
+      },
+      {
+        "License Type": "ARCHITECT",
+        "count": 20,
+        "percent": 0.2
+      },
+      {
+        "License Type": "LAND SURVEYOR BOARD",
+        "count": 17,
+        "percent": 0.2
+      }
+    ]
+  },
+  "hconcat": [
+    {
+      "data": {
+        "name": "data-c996b2221d3b194c89a857bbeff5f2c6"
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "param": "param_b5470487216b7b0f",
+            "value": "orange"
+          },
+          "value": "lightgray"
+        },
+        "tooltip": [
+          {
+            "field": "License Type",
+            "type": "nominal"
+          },
+          {
+            "field": "count",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "field": "count",
+          "title": "Total Count",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "License Type",
+          "sort": "-x",
+          "title": "License Type",
+          "type": "nominal"
+        }
+      },
+      "height": 400,
+      "mark": {
+        "type": "bar"
+      },
+      "name": "view_f44ed75dfc1fd17d_0",
+      "width": 300
+    },
+    {
+      "data": {
+        "name": "data-94090c2196054711b56d02f5c5fd20ab"
+      },
+      "encoding": {
+        "color": {
+          "field": "n",
+          "scale": {
+            "scheme": "blues"
+          },
+          "title": "Count",
+          "type": "quantitative"
+        },
+        "opacity": {
+          "condition": {
+            "param": "param_b5470487216b7b0f",
+            "value": 1.0
+          },
+          "value": 0.5
+        },
+        "tooltip": [
+          {
+            "field": "License Type",
+            "type": "nominal"
+          },
+          {
+            "field": "License Status",
+            "type": "nominal"
+          },
+          {
+            "field": "n",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "field": "License Status",
+          "title": "Status",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "License Type",
+          "sort": [
+            "DETECTIVE BOARD",
+            "COSMO",
+            "DENTAL",
+            "FUNERAL AND EMBALMER",
+            "DIETETIC AND NUTRITION",
+            "DESIGN FIRM",
+            "MASSAGE LICENSING BD",
+            "HOME INSPECTOR",
+            "COMM ASSOC MGR",
+            "CLIN PSYCHOLOGIST",
+            "INTERIOR DESIGN",
+            "COLLECTION AGENCY",
+            "LIMITED LIABILITY CO",
+            "ARCHITECT",
+            "LAND SURVEYOR BOARD"
+          ],
+          "title": "",
+          "type": "nominal"
+        }
+      },
+      "height": 1000,
+      "mark": {
+        "type": "rect"
+      },
+      "width": 400
+    }
+  ],
+  "params": [
+    {
+      "name": "param_b5470487216b7b0f",
+      "select": {
+        "fields": [
+          "License Type"
+        ],
+        "on": "click",
+        "toggle": true,
+        "type": "point"
+      },
+      "views": [
+        "view_f44ed75dfc1fd17d_0"
+      ]
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  }
+}

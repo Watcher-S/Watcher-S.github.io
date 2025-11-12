@@ -1,0 +1,173 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "data": {
+    "name": "data-3dc79f29675c3c33e0da1220cdadd5a0"
+  },
+  "datasets": {
+    "data-3dc79f29675c3c33e0da1220cdadd5a0": [
+      {
+        "count": 4867,
+        "license": "DETECTIVE BOARD",
+        "percent": 48.7
+      },
+      {
+        "count": 3781,
+        "license": "COSMO",
+        "percent": 37.8
+      },
+      {
+        "count": 739,
+        "license": "DENTAL",
+        "percent": 7.4
+      },
+      {
+        "count": 98,
+        "license": "FUNERAL AND EMBALMER",
+        "percent": 1.0
+      },
+      {
+        "count": 73,
+        "license": "DIETETIC AND NUTRITION",
+        "percent": 0.7
+      },
+      {
+        "count": 71,
+        "license": "DESIGN FIRM",
+        "percent": 0.7
+      },
+      {
+        "count": 52,
+        "license": "MASSAGE LICENSING BD",
+        "percent": 0.5
+      },
+      {
+        "count": 46,
+        "license": "HOME INSPECTOR",
+        "percent": 0.5
+      },
+      {
+        "count": 37,
+        "license": "COMM ASSOC MGR",
+        "percent": 0.4
+      },
+      {
+        "count": 24,
+        "license": "CLIN PSYCHOLOGIST",
+        "percent": 0.2
+      },
+      {
+        "count": 22,
+        "license": "INTERIOR DESIGN",
+        "percent": 0.2
+      },
+      {
+        "count": 21,
+        "license": "COLLECTION AGENCY",
+        "percent": 0.2
+      },
+      {
+        "count": 21,
+        "license": "LIMITED LIABILITY CO",
+        "percent": 0.2
+      },
+      {
+        "count": 20,
+        "license": "ARCHITECT",
+        "percent": 0.2
+      },
+      {
+        "count": 17,
+        "license": "LAND SURVEYOR BOARD",
+        "percent": 0.2
+      },
+      {
+        "count": 16,
+        "license": "HME AND SERVICES PROV",
+        "percent": 0.2
+      },
+      {
+        "count": 15,
+        "license": "ATHLETICS",
+        "percent": 0.2
+      },
+      {
+        "count": 14,
+        "license": "MAR AND FAM THERAPIST",
+        "percent": 0.1
+      },
+      {
+        "count": 14,
+        "license": "ATHLETIC TRAINER",
+        "percent": 0.1
+      },
+      {
+        "count": 13,
+        "license": "ENVIRON. HLTH PRACT",
+        "percent": 0.1
+      },
+      {
+        "count": 9,
+        "license": "IDPR",
+        "percent": 0.1
+      },
+      {
+        "count": 7,
+        "license": "GEOLOGY",
+        "percent": 0.1
+      },
+      {
+        "count": 7,
+        "license": "LANDSCAPE ARCHITECT",
+        "percent": 0.1
+      },
+      {
+        "count": 6,
+        "license": "MEDICAL BOARD",
+        "percent": 0.1
+      },
+      {
+        "count": 5,
+        "license": "APPRAISAL",
+        "percent": 0.0
+      },
+      {
+        "count": 2,
+        "license": "DETECT. DECEPTION",
+        "percent": 0.0
+      },
+      {
+        "count": 2,
+        "license": "AUCTIONEER",
+        "percent": 0.0
+      },
+      {
+        "count": 1,
+        "license": "CEMETERY OVERSIGHT",
+        "percent": 0.0
+      }
+    ]
+  },
+  "encoding": {
+    "x": {
+      "field": "license",
+      "sort": "-y",
+      "title": "License",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "count",
+      "title": "Count",
+      "type": "quantitative"
+    }
+  },
+  "mark": {
+    "color": "steelblue",
+    "type": "bar"
+  }
+}
