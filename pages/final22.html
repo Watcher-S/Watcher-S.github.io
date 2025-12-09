@@ -1,0 +1,196 @@
+---
+layout: page
+title: Final22 Project
+permalink: /final22/
+---
+
+<div class="container py-4">
+  <h1>Final22 Project</h1>
+  <p>This page hosts the visualizations and interactive content from the <code>final22.ipynb</code> notebook.</p>
+
+  <h2>Notebook Viewer</h2>
+  <p>If the notebook exists in the repo at <code>python_notebooks/final22.ipynb</code>, it will render below via nbviewer.</p>
+  <div style="height:80vh; width:100%; border:1px solid #ddd;">
+    <iframe id="nbviewer-frame" title="Notebook Viewer" style="width:100%; height:100%; border:0;" loading="lazy"
+      src="https://nbviewer.org/github/Watcher-S/Watcher-S.github.io/blob/main/python_notebooks/final22.ipynb">
+    </iframe>
+  </div>
+
+  <h2 class="mt-4">Data Source</h2>
+  <p>
+    Option A: Load a public CSV via CDN. Option B: Load directly from Chicago's Socrata SODA API.
+  </p>
+
+  <div class="card mb-3">
+    <div class="card-body">
+      <ul>
+        <li>CSV URL (optional): paste a public, CORS-enabled CSV.</li>
+        <li>SODA API: uses <code>https://data.cityofchicago.org/resource/85ca-t3if.json</code> with filters.</li>
+      </ul>
+      <label for="csvUrl" class="form-label">CSV URL</label>
+      <input id="csvUrl" type="url" class="form-control" placeholder="https://cdn.example.com/path/to/final22.csv">
+
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <label for="fromDate" class="form-label">From Date (YYYY-MM-DD)</label>
+          <input id="fromDate" type="text" class="form-control" placeholder="2024-01-01">
+        </div>
+        <div class="col-md-6">
+          <label for="toDate" class="form-label">To Date (YYYY-MM-DD)</label>
+          <input id="toDate" type="text" class="form-control" placeholder="2024-12-31">
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <label for="limitRows" class="form-label">Max Rows</label>
+          <input id="limitRows" type="number" class="form-control" value="5000">
+        </div>
+        <div class="col-md-6">
+          <label for="primaryType" class="form-label">Primary Crash Type (optional)</label>
+          <input id="primaryType" type="text" class="form-control" placeholder="PEDESTRIAN">
+        </div>
+      </div>
+
+      <button id="loadBtn" class="btn btn-primary mt-3">Load Data</button>
+      <div id="loadStatus" class="mt-2"></div>
+    </div>
+  </div>
+
+  <h2>Altair/Vega-Lite Visualization</h2>
+  <div id="vegaChart"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+<script>
+  const csvInput = document.getElementById('csvUrl');
+  const loadBtn = document.getElementById('loadBtn');
+  const loadStatus = document.getElementById('loadStatus');
+  const fromDateEl = document.getElementById('fromDate');
+  const toDateEl = document.getElementById('toDate');
+  const limitEl = document.getElementById('limitRows');
+  const primaryTypeEl = document.getElementById('primaryType');
+
+  async function fetchCSV(url) {
+    const resp = await fetch(url, { mode: 'cors' });
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    return await resp.text();
+  }
+
+  function parseCSV(text) {
+    const rows = text.split(/\r?\n/).filter(Boolean).map(r => r.split(','));
+    const headers = rows.shift();
+    return rows.map(r => Object.fromEntries(r.map((v, i) => [headers[i], v])));
+  }
+
+  function buildVegaLiteSpec(data) {
+    const cols = Object.keys(data[0] || {});
+    const numericCols = cols.filter(c => !isNaN(Number(data[0][c])));
+    const x = numericCols[0] || cols[0];
+    const y = numericCols[1] || cols[1] || cols[0];
+
+    return {
+      $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
+      data: { values: data },
+      mark: 'point',
+      encoding: {
+        x: { field: x, type: 'quantitative' },
+        y: { field: y, type: 'quantitative' },
+        tooltip: cols.map(c => ({ field: c, type: 'nominal' }))
+      }
+    };
+  }
+
+  function buildSodaUrl(params) {
+    const base = 'https://data.cityofchicago.org/resource/85ca-t3if.json';
+    const url = new URL(base);
+    if (params.fromDate) url.searchParams.set('$where', `(crash_date >= '${params.fromDate}T00:00:00'` + (params.toDate ? ` AND crash_date <= '${params.toDate}T23:59:59')` : `)`));
+    if (params.primaryType) url.searchParams.append("primary_crash_type", params.primaryType);
+    url.searchParams.set('$limit', String(params.limit || 5000));
+    url.searchParams.set('$order', 'crash_date DESC');
+    return url.toString();
+  }
+
+  async function fetchSoda(url) {
+    const resp = await fetch(url, { mode: 'cors' });
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    return await resp.json();
+  }
+
+  function transformSoda(rows) {
+    // Flatten and coerce numeric fields commonly used
+    return rows.map(r => ({
+      crash_date: r.crash_date,
+      latitude: r.latitude ? Number(r.latitude) : null,
+      longitude: r.longitude ? Number(r.longitude) : null,
+      injuries_total: r.injuries_total ? Number(r.injuries_total) : 0,
+      injuries_fatal: r.injuries_fatal ? Number(r.injuries_fatal) : 0,
+      posted_speed_limit: r.posted_speed_limit ? Number(r.posted_speed_limit) : null,
+      primary_crash_type: r.primary_crash_type || null,
+      weather_condition: r.weather_condition || null,
+      lighting_condition: r.lighting_condition || null
+    }));
+  }
+
+  function buildCrashSpec(data) {
+    return {
+      $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
+      data: { values: data },
+      mark: 'point',
+      transform: [
+        { calculate: "toDate(datum.crash_date)", as: "crash_dt" }
+      ],
+      encoding: {
+        x: { field: 'crash_dt', type: 'temporal', title: 'Crash Date' },
+        y: { field: 'injuries_total', type: 'quantitative', title: 'Total Injuries' },
+        color: { field: 'primary_crash_type', type: 'nominal' },
+        tooltip: [
+          { field: 'crash_date', type: 'temporal' },
+          { field: 'injuries_total', type: 'quantitative' },
+          { field: 'primary_crash_type', type: 'nominal' },
+          { field: 'weather_condition', type: 'nominal' },
+          { field: 'lighting_condition', type: 'nominal' }
+        ]
+      }
+    };
+  }
+
+  async function loadAndRender() {
+    const csvUrl = csvInput.value.trim();
+    const params = {
+      fromDate: fromDateEl.value.trim() || null,
+      toDate: toDateEl.value.trim() || null,
+      primaryType: primaryTypeEl.value.trim() || null,
+      limit: Number(limitEl.value) || 5000
+    };
+    try {
+      let data = [];
+      if (csvUrl) {
+        loadStatus.textContent = 'Fetching CSV…';
+        const text = await fetchCSV(csvUrl);
+        loadStatus.textContent = 'Parsing CSV…';
+        data = parseCSV(text);
+        const spec = buildVegaLiteSpec(data);
+        loadStatus.textContent = `Loaded ${data.length} rows. Rendering…`;
+        await vegaEmbed('#vegaChart', spec, { actions: true });
+        loadStatus.textContent = 'Rendered chart.';
+      } else {
+        loadStatus.textContent = 'Fetching SODA…';
+        const sodaUrl = buildSodaUrl(params);
+        const rows = await fetchSoda(sodaUrl);
+        data = transformSoda(rows);
+        const spec = buildCrashSpec(data);
+        loadStatus.textContent = `Loaded ${data.length} rows. Rendering…`;
+        await vegaEmbed('#vegaChart', spec, { actions: true });
+        loadStatus.textContent = 'Rendered chart.';
+      }
+    } catch (err) {
+      console.error(err);
+      loadStatus.textContent = `Error: ${err.message}`;
+    }
+  }
+
+  loadBtn.addEventListener('click', loadAndRender);
+</script>
